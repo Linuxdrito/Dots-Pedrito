@@ -14,7 +14,7 @@
     "group/gleft2" : {
         "orientation": "horizontal",
         "modules" : [
-            "niri/workspaces", "mpd","custom/mpd-power"
+            "hyprland/workspaces", "mpd","custom/mpd-power"
         ]
     },
 
@@ -38,3 +38,4 @@
 
     "include": [ "~/.config/waybar/modules.jsonc" ]
 }
+

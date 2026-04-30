@@ -52,12 +52,12 @@ tooltip label {
 
 /* global paddings */
 #backlight, #pulseaudio, #network, #temperature,
-#bluetooth, #battery, #memory, #cpu, #load{
+#bluetooth, #battery, #memory, #cpu, #load, #tray{
     padding: 2px 7px;
 }
 
 #workspaces, #bluetooth, #battery, #memory, #temperature,
-#network, #pulseaudio, #backlight, #cpu, #load {
+#network, #pulseaudio, #backlight, #cpu, #load, #tray {
     background: @module-bg;
     border-radius: 15px;
     margin: 0 3px;

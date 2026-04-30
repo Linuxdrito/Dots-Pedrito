@@ -3,6 +3,7 @@ window {
     background-color: rgba(0, 0, 0, 0.7);
     font-family: "VCR OSD Mono", "monospace";
     font-size: 16px;
+    animation: slide-up 1s ease-out;    
 }
 
 #input {

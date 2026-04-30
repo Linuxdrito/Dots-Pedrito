@@ -6,6 +6,24 @@
         }
     },
 
+    "hyprland/workspaces": {
+        "format": "{icon}",
+        "on-click": "activate",
+        "sort-by-number": true,
+        "format-icons": {
+          "1": "1",
+          "2": "2",
+          "3": "3",
+          "4": "4",
+          "5": "5",
+          "6": "6",
+          "7": "7",
+          "8": "8",
+          "9": "9",
+          "10": "10",
+        }
+    },
+
     "niri/window": {
         "max-length": 45
     },
@@ -63,9 +81,10 @@
     "network": {
         "interval": 1000,
         "format-disabled": "",
-        "format-wifi": "  {essid} ({signalStrength} ",
+        "format-wifi": "  {essid}",
         "format-ethernet": "󱓞 Wired connection",
         "format-disconnected": "",
+        "max-length": 7
     },
 
     "battery": {
@@ -94,6 +113,7 @@
         "format-disconnected": "",
         "format-stopped": "",
         "unknown-tag": "N/A",
+        "max-length": 30,
         "interval": 2,
         "state-icons": {
             "paused": "󰏤",
@@ -112,4 +132,9 @@
         "format": "  ",
         "on-click": "~/.config/rofi/bin/drun &"
     },
+    
+    "tray": {
+        "icon-size": 16,
+        "spacing": 8
+    }
 }

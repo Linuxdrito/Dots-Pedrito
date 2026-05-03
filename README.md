@@ -1,20 +1,9 @@
 # SON MIS DOTS POR SI CAMBIO DE DISTRO O PIERDO MI VOID POR ALGUN KERNEL PANIC
 
 
-> Advanced configurations for a Wayland-based Linux environment, designed for minimalism and maximum hardware performance.
+> Advanced configurations for a Wayland-based Linux environment, designed for minimalism.
 
 This repository manages two distinct workflows: **Hyprland** for dynamic tiling and **Niri** for horizontal scrolling.
-
----
-
-## System Specifications
-
-| Field | Value |
-|---|---|
-| **CPU** | Intel i7-1185G7 (11th Gen) |
-| **GPU** | Intel Iris Xe Graphics (Tigerlake-LP GT2) |
-| **Target Resolution** | 1920×1080 |
-| **Shell** | Zsh (manually compiled at `/usr/local/bin/zsh`) |
 
 ---
 
@@ -63,7 +52,6 @@ This repository manages two distinct workflows: **Hyprland** for dynamic tiling 
 | `mod + Return` | Open Terminal | `footclient` |
 | `mod + D` | Application Menu | `wofi` |
 | `mod + Q` | Kill Window | — |
-| `mod + B` | Web Browser | `badwolf` |
 | `mod + T` | Power Browser | `thorium` |
 | `mod + Shift + B` | System Monitor | `btop` |
 | `mod + Shift + N` | Music Player | `ncmpcpp` |
@@ -94,7 +82,7 @@ The Niri configuration integrates custom shaders for window manipulation via GLS
 
 ```sh
 # 1. Clone the repository
-git clone <repo-url> ~/.config/
+git clone <https://github.com/ESPEROquenadieencuentreesto/Dots-Pedrito.git> ~/.config/
 
 # 2. Ensure binaries are on the correct PATH
 which foot   # should point to the correct binary

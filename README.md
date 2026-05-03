@@ -9,6 +9,14 @@ This repository manages two distinct workflows: **Hyprland** for dynamic tiling 
 
 ---
 
+
+
+https://github.com/user-attachments/assets/7c5a57c1-e236-4a22-a8b2-5cd0d1f9c8e3
+
+
+
+---
+
 ## Software Dependencies
 
 ### Core Utilities

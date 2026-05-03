@@ -7,6 +7,7 @@
 
 This repository manages two distinct workflows: **Hyprland** for dynamic tiling and **Niri** for horizontal scrolling.
 
+---
 
 ## Software Dependencies
 

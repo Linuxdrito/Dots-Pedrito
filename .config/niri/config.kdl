@@ -53,7 +53,7 @@ layout {
     border {
         width 3
         active-color "#ffffff"
-        inactive-color "#666666"
+        inactive-color "#555555"
     }
 }
 
@@ -73,10 +73,10 @@ animations {
         curve "ease-out-quad"
     }
     window-close{
-	duration-ms 500
-	curve "ease-out-cubic"
-	custom-shader r"
-	vec4 hash4(vec2 i) {
+	      duration-ms 500
+	      curve "ease-out-cubic"
+	      custom-shader r"
+	      vec4 hash4(vec2 i) {
         vec4 p = vec4(
         dot(i,               vec2(127.1, 311.7)),
         dot(i + vec2(1.,0.), vec2(127.1, 311.7)),
@@ -209,7 +209,8 @@ animations {
 
 spawn-at-startup "foot" "--server"
 spawn-at-startup "swaybg" "-i" "/home/pedrito/Descargas/fondorojo.jpg"
-spawn-at-startup "waybar"
+spawn-at-startup "waybar" "-c" "/home/pedrito/.config/waybar/config-niri.jsonc"
+spawn-at-startup "pulseaudio"
 prefer-no-csd
 
 
@@ -217,11 +218,13 @@ hotkey-overlay {
     skip-at-startup
 }
 
-screenshot-path "/tmp/Screenshot from %Y-%m-%d %H-%M-%S.png"
+screenshot-path "/tmp/caps/Screenshot from %Y-%m-%d %H-%M-%S.png"
 
 window-rule {
     match app-id="Firefox"
     match app-id="thorium-browser"
+    match app-id="io.github.elyprismlauncher.ElyPrismLauncher"
+    match app-id="steam"
     open-maximized true
     open-focused true
 }
@@ -230,7 +233,7 @@ window-rule {
     match app-id="footclient"
     match app-id="kitty"
     match app-id="Alacritty"
-    opacity 0.7
+    opacity 0.8
 }
 
 window-rule {

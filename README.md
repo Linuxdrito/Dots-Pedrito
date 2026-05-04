@@ -99,18 +99,3 @@ The Niri configuration integrates custom shaders for window manipulation via GLS
 - **fetch** — Like fastfetch but fetch, (fastfetch doesn't work for me natively with GIFs, ; I tried several things, so i did it this way)`mod + H`.
 
 
----
-
-## Installation
-
-```sh
-# 1. Clone the repository
-git clone <https://github.com/ESPEROquenadieencuentreesto/Dots-Pedrito.git> ~/.config/
-
-# 2. Ensure binaries are on the correct PATH
-which foot   # should point to the correct binary
-which zsh    # should point to /usr/local/bin/zsh
-
-# 3. Autostart scripts will launch:
-#    waybar, pulseaudio, and the corresponding wallpaper daemon
-```

@@ -26,6 +26,18 @@ https://github.com/user-attachments/assets/7c5a57c1-e236-4a22-a8b2-5cd0d1f9c8e3
 | `waybar` | Modular status bar |
 | `brightnessctl` | Backlight management |
 | `playerctl` / `mpc` | Media and MPD control |
+| `fetch` | Fastfetch Lain |
+| `thorium-browser` | browser |
+
+
+### Dependencies
+
+```sh
+hyprland xdg-desktop-portal-hyprland foot wofi waybar swww pulseaudio alsa-utils brightnessctl 
+playerctl mpd mpc ncmpcpp btop cava grim firefox wlogout kitty jq fastfetch timg gcc
+
+```
+
 
 ### Runtime Applications
 
@@ -64,6 +76,7 @@ https://github.com/user-attachments/assets/7c5a57c1-e236-4a22-a8b2-5cd0d1f9c8e3
 | `mod + Shift + B` | System Monitor | `btop` |
 | `mod + Shift + N` | Music Player | `ncmpcpp` |
 | `mod + N` | Low Brightness | `brightnessctl set 1` |
+| `mod + H` | fastfetch lain gifs | `fetch` |
 | `mod + Up/Down` | Music Seek | `mpc` |
 | `Print` | Screenshot | `grim` |
 
@@ -83,6 +96,8 @@ The Niri configuration integrates custom shaders for window manipulation via GLS
 - **Dwindle** — Pseudotiling layout with split preservation.
 - **Window Rules** — Forced 80% opacity for terminals (`foot`, `kitty`, `Alacritty`).
 - **Workspaces** — 9 virtual workspaces, navigated with `mod + [1-9]` or `mod + Page_Up/Down`.
+- **fetch** — Like fastfetch but fetch, (fastfetch doesn't work for me natively with GIFs, ; I tried several things, so i did it this way)`mod + H`.
+
 
 ---
 

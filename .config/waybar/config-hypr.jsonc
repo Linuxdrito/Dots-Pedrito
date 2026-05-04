@@ -14,7 +14,7 @@
     "group/gleft2" : {
         "orientation": "horizontal",
         "modules" : [
-            "hyprland/workspaces", "mpd","custom/mpd-power"
+            "clock","custom/mpd-power"
         ]
     },
 
@@ -33,7 +33,7 @@
     },
 
     "modules-left"   : ["custom/start", "group/gleft1", "group/gleft2"],
-    "modules-center" : ["clock"],
+    "modules-center" : ["hyprland/workspaces"],
     "modules-right"  : [ "group/gright2", "group/gright1"],
 
     "include": [ "~/.config/waybar/modules.jsonc" ]

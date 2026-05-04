@@ -22,7 +22,6 @@ setopt HIST_IGNORE_SPACE
 setopt CORRECT
 setopt INC_APPEND_HISTORY
 
-export PATH="$HOME/.local/bin:$HOME/.cabal/bin:$PATH"
 
 alias nirii='dbus-run-session niri'
 alias matrix='unimatrix -s 97'
@@ -31,14 +30,17 @@ alias mp3='z Mus && yt-dlp -f "ba" -x --audio-format mp3 --audio-quality 0 --emb
 alias nvm='nvim'
 alias hyprlandd='dbus-run-session hyprland'
 alias sicobi="cd ~/Descargas/Programacionjava2A/SICOBI/src/ && nvm RegistroUsuarios.java"
-alias xi="sudo xbps-install -S"
-alias fastt="fastfetch --logo ~/Descargas/lain-gift.gif --logo-type kitty" 
+alias xi="doas xbps-install --repository=hostdir/binpkgs -f"
+alias fastt="fastfetch --logo ~/Descargas/lain-gift.gif --logo-type sixel" 
+alias fasttt="fastfetch --logo ~/Descargas/lain.jpg --logo-type kitty --logo-width 30 --logo-height 20" 
+alias lavat="lavat -c blue -s 10"
+alias netbeans="/opt/netbeans-25/bin/netbeans"
 
 PROMPT_EOL_MARK=""
 EDITOR=nano
 
-export PATH=$PATH:/home/pedrito/.spicetify
-export PATH=$PATH:/usr/lib/jvm/openjdk17/bin
+export JAVA_HOME=/usr/lib/jvm/openjdk21
+export PATH="$HOME/.local/bin:$HOME/.cabal/bin:$JAVA_HOME/bin:$HOME/.spicetify:$PATH"
 export COLORTERM=truecolor
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"

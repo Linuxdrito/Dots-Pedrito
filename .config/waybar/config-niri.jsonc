@@ -14,7 +14,7 @@
     "group/gleft2" : {
         "orientation": "horizontal",
         "modules" : [
-            "niri/workspaces","niri/window", "mpd","custom/mpd-power"
+            "niri/workspaces","custom/mpd-power"
         ]
     },
 

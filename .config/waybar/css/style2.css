@@ -13,7 +13,7 @@
 #waybar {
     font-weight: 700;
     background: transparent;
-    font-size: 16px;
+    font-size: 17px;
     border-radius: 15px;
     color: rgba(0, 255, 255, 1);
 }
@@ -56,12 +56,20 @@ tooltip label {
     padding: 2px 7px;
 }
 
-#workspaces, #bluetooth, #battery, #memory, #temperature,
+#bluetooth, #battery, #memory, #temperature,
 #network, #pulseaudio, #backlight, #cpu, #load, #tray {
     background: @module-bg;
     border-radius: 15px;
     margin: 0 3px;
 } 
+
+#workspaces {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 6px 10px;
+    margin: 0 6px;
+    border-radius: 20px;
+    border: 2px solid rgba(0, 255, 255, 0.3);
+}
 
 #custom-start, #custom-logout, #gright1, #gleft1,
 #gright2, #gleft2, #custom-ctlcenter, #power-profiles-daemon {
@@ -80,14 +88,17 @@ tooltip label {
 
 #gright2, #gleft2  {
     margin: 0 8px;
+    border: 2px solid rgba(0, 255, 255, 0.3);
 }
 
 #gleft1 {
     margin: 0 0 0 8px;
+    border: 2px solid rgba(0, 255, 255, 0.3);
 }
 
 #gright1 {
     margin: 0 8px 0 0;
+    border: 2px solid rgba(0, 255, 255, 0.3);
 }
 
 #memory.critical, #cpu.critical,
@@ -102,14 +113,71 @@ tooltip label {
 }
 
 #workspaces button {
-    color: rgba(0, 255, 255, 1);
-    font-size: 15px;
-    border-radius: 15px;
-    margin: 0 7px;
+    padding: 0px 5px 0px 3px;
+    margin: 0 5px;
+    min-width: 12px;
+    min-height: 12px;
+    border-radius: 50%;
+    background-color: rgba(0, 255, 255, 0.2);
+    color: transparent;
+    font-size: 0px;
+    border: none;
+    box-shadow: none;
+
+    transition: 
+        min-width 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55),
+        min-height 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55),
+        border-radius 0.5s cubic-bezier(0.34, 1.56, 0.64, 1),
+        background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+        margin 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+#workspaces button.active {
+    min-width: 18px;
+    min-height: 12px;
+    border-radius: 12px;
+    background-color: #00ffff;
+    margin: 0 4px;
+    
+    box-shadow: 
+        inset 0 0 12px rgba(0, 255, 255, 0.8),
+        inset 0 0 4px rgba(0, 255, 255, 0.4);
 }
 
 #workspaces button:hover {
-    background: transparent;
+    min-width: 16px;
+    min-height: 12px;
+    border-radius: 10px;
+    background-color: rgba(0, 255, 255, 0.6);
+    
+    box-shadow: 
+        inset 0 0 10px rgba(0, 255, 255, 0.5);
+}
+
+#workspaces button.urgent {
+    background-color: #ff0055;
+    min-width: 18px;
+    border-radius: 10px;
+    
+    animation: liquid-pulse 0.8s cubic-bezier(0.4, 0, 0.6, 1) infinite alternate;
+    box-shadow: 
+        inset 0 0 14px rgba(255, 0, 85, 0.8);
+}
+
+@keyframes liquid-pulse {
+    0% {
+        min-width: 16px;
+        box-shadow: 
+            inset 0 0 10px rgba(255, 0, 85, 0.5),
+            inset 0 0 4px rgba(255, 0, 85, 0.3);
+    }
+    100% {
+        min-width: 22px;
+        box-shadow: 
+            inset 0 0 18px rgba(255, 0, 85, 0.8),
+            inset 0 0 8px rgba(255,0, 85, 0.6);
+    }
 }
 
 #custom-logout {
@@ -132,6 +200,7 @@ tooltip label {
 
 #custom-start {
     color: rgba(0, 255, 255, 1);
+    border: 2px solid rgba(0, 255, 255, 0.3);
 }
 
 #custom-quicksettings {

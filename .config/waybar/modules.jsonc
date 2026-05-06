@@ -19,7 +19,7 @@
     },
 
     "cpu": {
-        "interval": 20,
+        "interval": 40,
         "format":" {usage}%",
         "states": {
             "warning": 80,
@@ -34,7 +34,7 @@
     },
 
     "memory": {
-        "interval": 30,
+        "interval": 40,
         "format": "  {used:0.1f}G/{total:0.1f}G",
         "states": {
             "warning": 80,
@@ -43,9 +43,9 @@
     },
 
     "temperature": {
-        "interval": 30,
+        "interval": 50,
         "hwmon-path": "/sys/class/hwmon/hwmon7/temp1_input",
-	"format": "{icon} {temperatureC}°",
+	      "format": "{icon} {temperatureC}°",
         "critical-threshold": 80,
         "format-icons": ["","","","",""]	
     },

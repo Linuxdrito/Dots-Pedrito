@@ -1,6 +1,6 @@
 show=drun
 width=400
-height=300
+height=325
 always_parse_dot_desktop=true
 location=center
 show_generic=true

@@ -13,6 +13,14 @@
             "*": 5
         }
     },
+    
+    "ext/workspaces": {
+        "format": "{icon}",
+        "ignore-hidden": true,
+        "on-click": "activate",
+        "on-click-right": "deactivate",
+        "sort-by-id": true
+    },
 
     "niri/window": {
         "max-length": 45
@@ -114,7 +122,7 @@
     "custom/mpd-power": {
         "format": "  󰎆 MPD  ",
         "on-click": "mpd",
-        "on-click-right": "killall mpd",
+        "on-click-right": "pkill mpd",
         "tooltip-format": "Click: Iniciar MPD\nRight Click: Detener MPD"
     },
 

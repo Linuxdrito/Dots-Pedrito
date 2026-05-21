@@ -1,0 +1,41 @@
+{
+    "layer" : "top",
+    "position" : "top",
+    "width" : 1920,
+    "margin" : "5 0",
+
+    "group/gleft1" : {
+        "orientation": "horizontal",
+        "modules" : [
+            "battery", "cpu"
+        ]
+    },
+
+    "group/gleft2" : {
+        "orientation": "horizontal",
+        "modules" : [
+            "clock","custom/mpd-power"
+        ]
+    },
+
+    "group/gright1" : {
+        "orientation": "horizontal",
+        "modules" : [
+            "memory", "temperature", "tray"
+        ]
+    },
+
+    "group/gright2" : {
+        "orientation": "horizontal",
+        "modules" : [
+            "pulseaudio", "network"
+        ]
+    },
+
+    "modules-left"   : ["custom/start", "group/gleft1", "group/gleft2"],
+    "modules-center" : ["ext/workspaces"],
+    "modules-right"  : [ "group/gright2", "group/gright1"],
+
+    "include": [ "~/.config/waybar/modules.jsonc" ]
+}
+

@@ -1,0 +1,26 @@
+#
+# Configuration file for GRUB.
+#
+GRUB_DEFAULT="Opciones avanzadas para Void GNU/Linux>Void GNU/Linux, con Linux 6.18.26_minimal-void2"
+#GRUB_DEFAULT=0
+#GRUB_HIDDEN_TIMEOUT="0"
+#GRUB_HIDDEN_TIMEOUT_QUIET="false"
+GRUB_TIMEOUT="0"
+GRUB_DISTRIBUTOR="Void"
+GRUB_CMDLINE_LINUX_DEFAULT="loglevel=4 video=eDP-1:1920x1080@60 i915.enable_psr=1 mem_sleep_default=deep i915.enable_fbc=1 i915.enable_guc=3 pcie_aspm=force nowatchdog"
+# Uncomment to use basic console
+#GRUB_TERMINAL_INPUT="console"
+# Uncomment to disable graphical terminal
+#GRUB_TERMINAL_OUTPUT="console"
+#GRUB_BACKGROUND="/usr/share/void-artwork/splash.png"
+#GRUB_GFXMODE="1920x1080x32"
+#GRUB_DISABLE_LINUX_UUID="true"
+#GRUB_DISABLE_RECOVERY="true"
+# Uncomment and set to the desired menu colors.  Used by normal and wallpaper
+# modes only.  Entries specified as foreground/background.
+#GRUB_COLOR_NORMAL="light-blue/black"
+#GRUB_COLOR_HIGHLIGHT="light-cyan/blue"
+
+GRUB_THEME="/boot/grub/themes/fallout-grub-theme/theme.txt"
+
+GRUB_SAVEDEFAULT="false"
